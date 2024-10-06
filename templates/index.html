@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to GraphQL Converter</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>JSON to GraphQL Converter</h1>
+    <form id="converterForm">
+        <label for="jsonInput">Enter JSON:</label>
+        <textarea id="jsonInput" rows="10"></textarea>
+        <button type="submit">Convert to GraphQL</button>
+        <button type="button" id="beautifyJson">Beautify JSON</button>
+    </form>
+
+    <h2>GraphQL Output:</h2>
+    <textarea id="graphqlOutput" rows="10" readonly></textarea>
+    <button id="copyButton">Copy to Clipboard</button>
+</div>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
